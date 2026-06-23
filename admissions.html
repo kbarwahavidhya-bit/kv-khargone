@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Aurelia Academy's admission process, timeline, fee structure, and estimate tuition using our interactive calculator.">
+  <title>Admissions &amp; Fees | Aurelia Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-logo">
+        <div class="logo-icon">A</div>
+        <span class="logo-text">Aurelia Academy</span>
+      </a>
+      
+      <button class="burger-menu" aria-label="Toggle Menu" id="burger-menu-btn">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="admissions.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.95rem; color: #fff;">Apply Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('assets/images/hero_bg.png');">
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <h1>Admissions &amp; Tuition</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Admissions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Steps / Timeline Section -->
+  <section class="section-padding container animate-on-scroll">
+    <div class="text-center" style="max-width: 800px; margin: 0 auto 50px auto;">
+      <span class="hero-tag" style="color: var(--secondary); font-size: 0.85rem;">Join Our Community</span>
+      <h2>Our Admission Process</h2>
+      <p style="color: var(--text-muted); margin-top: 10px;">We keep our admission procedure clear and student-focused to ensure a smooth transition for your family. Follow these four steps to secure enrollment.</p>
+    </div>
+
+    <!-- Timeline Component -->
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item left-item">
+        <div class="timeline-content">
+          <span class="timeline-badge">Step 1</span>
+          <h3>Online Inquiry</h3>
+          <p>Complete our admissions inquiry form on the contact page. Provide basic academic history and student details so we can understand your objectives.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item right-item">
+        <div class="timeline-content">
+          <span class="timeline-badge">Step 2</span>
+          <h3>Campus Visit &amp; Tour</h3>
+          <p>Book a tour of our smart campus. Meet with a counselor, inspect the science labs, arts studio, and library, and learn about curriculum levels.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item left-item">
+        <div class="timeline-content">
+          <span class="timeline-badge">Step 3</span>
+          <h3>Student Assessment</h3>
+          <p>Prospective students complete a basic placement assessment in English literacy, mathematics, and critical analysis to determine level assignment.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item right-item">
+        <div class="timeline-content">
+          <span class="timeline-badge">Step 4</span>
+          <h3>Enrollment Offer</h3>
+          <p>Successful candidates receive a formal admission package. Confirm seat placement by submitting registration documentation and the enrollment fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tuition Fee Calculator Section -->
+  <section class="section-padding animate-on-scroll" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto 50px auto;">
+        <span class="hero-tag" style="color: var(--secondary); font-size: 0.85rem;">Fee Structure</span>
+        <h2>Tuition Fee Calculator</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">Tuition covers educational resources, curriculum licensing, and laboratory equipment access. Select your academic grade level and optional amenities below to estimate your annual fee.</p>
+      </div>
+
+      <!-- Interactive Calculator Container -->
+      <div class="calc-container">
+        <!-- Grade Level Dropdown -->
+        <div class="form-group">
+          <label for="grade-level">Select Grade Level</label>
+          <select id="grade-level" class="form-control">
+            <option value="early-years">Early Years (Ages 3-5) — $8,500/year</option>
+            <option value="primary">Primary School (Ages 6-10) — $10,500/year</option>
+            <option value="middle">Middle School (Ages 11-13) — $13,000/year</option>
+            <option value="high">High School (Ages 14-18) — $16,000/year</option>
+          </select>
+        </div>
+
+        <!-- Optional Checkboxes -->
+        <div class="form-group">
+          <label>Optional School Services</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="calc-bus">
+              <span>Two-way Bus Transportation (+$1,200/year)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="calc-meals">
+              <span>Fresh Lunch &amp; Catering Service (+$950/year)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="calc-care">
+              <span>After-School Enrichment Care (+$1,500/year)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Results Display -->
+        <div class="calc-result">
+          <span class="calc-result-title">Estimated Annual Fees</span>
+          <div class="calc-price" id="calc-total-price">$8,500</div>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">Note: Figures are estimated guidance rates. Actual billing statements may vary based on laboratory levels or scholarship credits.</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="contact.html" class="btn btn-primary">Start Admissions Inquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 20px;">
+          <div class="logo-icon">A</div>
+          <span class="logo-text" style="color: #fff;">Aurelia Academy</span>
+        </a>
+        <p class="footer-desc">An outstanding international school dedicated to nurturing potential, academic rigor, and empowering young leaders of tomorrow.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook">F</a>
+          <a href="#" class="social-btn" aria-label="Twitter">T</a>
+          <a href="#" class="social-btn" aria-label="Instagram">I</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">L</a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="campus-life.html">Campus Life</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="footer-contact-icon">📍</span>
+            <span>742 Aurelia Way, Education District, NY 10012, USA</span>
+          </li>
+          <li>
+            <span class="footer-contact-icon">✉️</span>
+            <span>admissions@aureliaacademy.edu</span>
+          </li>
+          <li>
+            <span class="footer-contact-icon">📞</span>
+            <span>+1 (212) 555-0199</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p class="footer-desc" style="margin-top: 0; margin-bottom: 16px;">Subscribe to get the latest updates, calendar notifications, and event announcements.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" class="newsletter-input" required aria-label="Email for Newsletter">
+          <button type="submit" class="btn btn-accent" style="padding: 10px 18px;">Go</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aurelia Academy. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Aurelia Academy. Submit an admissions inquiry, find campus directions, and view frequently asked questions.">
+  <title>Contact Us | Aurelia Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-logo">
+        <div class="logo-icon">A</div>
+        <span class="logo-text">Aurelia Academy</span>
+      </a>
+      
+      <button class="burger-menu" aria-label="Toggle Menu" id="burger-menu-btn">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="admissions.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.95rem; color: #fff;">Apply Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('assets/images/hero_bg.png');">
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <h1>Contact Our Campus</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Contact Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info & Form Grid Section -->
+  <section class="section-padding container animate-on-scroll">
+    <div class="contact-grid">
+      <!-- Left: Contact Details & Mock Map -->
+      <div class="contact-info">
+        <div>
+          <span class="hero-tag" style="color: var(--secondary); font-size: 0.85rem;">Get in Touch</span>
+          <h2>Campus Directory</h2>
+          <p style="color: var(--text-muted); margin-top: 10px; margin-bottom: 20px;">Have questions about the enrollment timeline, curriculum options, or wishing to book a tour? Our admissions counselors are available Monday through Friday, 8:00 AM – 4:00 PM.</p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon flex-center">📍</div>
+          <div class="info-text">
+            <h3>Campus Address</h3>
+            <p>742 Aurelia Way, Education District, NY 10012, USA</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon flex-center">✉️</div>
+          <div class="info-text">
+            <h3>Email Admissions</h3>
+            <p>admissions@aureliaacademy.edu</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon flex-center">📞</div>
+          <div class="info-text">
+            <h3>Admissions Hotline</h3>
+            <p>+1 (212) 555-0199 &nbsp;/&nbsp; +1 (212) 555-0190</p>
+          </div>
+        </div>
+
+        <!-- Custom Styled Map -->
+        <div class="mock-map">
+          <div class="mock-map-bg"></div>
+          <div class="mock-map-road road-h"></div>
+          <div class="mock-map-road road-v"></div>
+          <div class="mock-map-pin"></div>
+          <div class="mock-map-label">Aurelia Academy</div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="card" style="text-align: left; background-color: var(--bg-white);">
+        <h2 style="font-size: 1.8rem; margin-bottom: 8px;">Admissions Inquiry</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px;">Complete this form and an admissions specialist will reply to you within 24 business hours.</p>
+        
+        <form id="inquiry-form">
+          <div class="form-group">
+            <label for="form-name">Parent / Guardian Name *</label>
+            <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-email">Email Address *</label>
+            <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-phone">Phone Number</label>
+            <input type="tel" id="form-phone" class="form-control" placeholder="+1 (123) 456-7890">
+          </div>
+
+          <div class="form-group">
+            <label for="form-grade">Interested Grade Level</label>
+            <select id="form-grade" class="form-control">
+              <option value="early-years">Early Years (Ages 3-5)</option>
+              <option value="primary">Primary School (Ages 6-10)</option>
+              <option value="middle">Middle School (Ages 11-13)</option>
+              <option value="high">High School (Ages 14-18)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">Your Message *</label>
+            <textarea id="form-message" class="form-control" rows="4" placeholder="How can we assist your child's educational journey?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+          
+          <!-- Alert Message Box -->
+          <div id="form-status" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion FAQs Section -->
+  <section class="section-padding animate-on-scroll" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto 50px auto;">
+        <span class="hero-tag" style="color: var(--secondary); font-size: 0.85rem;">Answering Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">Find quick answers regarding our admission standards, tuition rates, and student support features.</p>
+      </div>
+
+      <!-- FAQ Container -->
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <h3>What curriculum frameworks does Aurelia Academy offer?</h3>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Aurelia Academy offers a hybrid global curriculum. For early years and primary levels, we follow the International Baccalaureate Primary Years Programme (IB PYP). Middle years follow the IB MYP, while high school features both advanced pre-university classes and the highly respected IB Diploma Programme.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <h3>Are academic or creative scholarships available?</h3>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Yes. Aurelia Academy offers merit-based academic scholarships, excellence scholarships in visual and performing arts, and financial need-based student assistance grants. Scholarships cover up to 50% of tuition fees. Apply during Step 2 of enrollment.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <h3>Does the school provide student bus transportation?</h3>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Yes, we maintain a fleet of modern, air-conditioned school buses equipped with GPS tracking and safety wardens. Routes cover all primary residential zones within a 25-mile radius of the school. Bus registration is billed annually.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <h3>What is the typical class size and teacher ratio?</h3>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              To ensure individual feedback and classroom participation, class sizes are strictly capped at 18 students. Our overall school-wide teacher-student ratio is 1:12, allowing educators to support both reinforcement and extension requirements.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 20px;">
+          <div class="logo-icon">A</div>
+          <span class="logo-text" style="color: #fff;">Aurelia Academy</span>
+        </a>
+        <p class="footer-desc">An outstanding international school dedicated to nurturing potential, academic rigor, and empowering young leaders of tomorrow.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook">F</a>
+          <a href="#" class="social-btn" aria-label="Twitter">T</a>
+          <a href="#" class="social-btn" aria-label="Instagram">I</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">L</a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="campus-life.html">Campus Life</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="footer-contact-icon">📍</span>
+            <span>742 Aurelia Way, Education District, NY 10012, USA</span>
+          </li>
+          <li>
+            <span class="footer-contact-icon">✉️</span>
+            <span>admissions@aureliaacademy.edu</span>
+          </li>
+          <li>
+            <span class="footer-contact-icon">📞</span>
+            <span>+1 (212) 555-0199</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p class="footer-desc" style="margin-top: 0; margin-bottom: 16px;">Subscribe to get the latest updates, calendar notifications, and event announcements.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" class="newsletter-input" required aria-label="Email for Newsletter">
+          <button type="submit" class="btn btn-accent" style="padding: 10px 18px;">Go</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aurelia Academy. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
